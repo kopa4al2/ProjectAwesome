@@ -1,0 +1,43 @@
+body{
+    background-color:#EEE;
+}
+.nav-bar{
+    text-align:center;
+    margin:auto;
+    display:flex;
+
+}
+.nav-item{
+    width:15%;
+    padding:15px;
+    margin:10px;
+    box-shadow:1px 1px 5px 2px black;
+    justify-content: space-around;
+    font-size:15px;
+
+}
+li{
+    list-style: none;
+}
+
+li:hover{
+    background-color:#DDD;
+}
+a{
+    text-decoration:none;
+
+}
+.main-container{
+    margin:30px 5px;
+    height:650px;
+    border:1px solid black;
+}
+footer{
+    display:flex;
+    flex-direction: row;
+}
+footer section{
+    width:30%;
+    height:100px;
+    border:3px solid black;
+}
