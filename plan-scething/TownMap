@@ -1,0 +1,17 @@
+
+matrix[TILES_ROW < 30 ][TILES_COL < 30]
+-1 sprite for tile 
+-2 resourse buildings
+-1 army building
+
+
+
+Developers:
+   
+   -Client side rendering
+   -Update on build or upgrade action
+   -Buildings will have tileHeight & tileWidth, we will save in db upper left coordinate and render it on load
+   
+
+
+	

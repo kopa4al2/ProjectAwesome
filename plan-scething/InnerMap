@@ -1,0 +1,31 @@
+        x =>
+ (0,0).________ 
+  y   |
+   || |
+   \/ |
+      |
+      |
+                                 
+matrix[NUMBER_OF_TILES_RIGHT][NUMBER_OF_TILES_DOWN]
+3 type of tiles:
+    -Simple race tile 
+    -Obstacle A race tile
+    -Obstacle B race tile
+3 type of Entity on tile
+    -Town
+    -Random enemy A
+    -Random enemy B 
+
+Interactions:
+    Click on enemy
+	-Open screen with enemy review and portrait 
+	-Option to attack or not
+    Click on town
+	-Quick town summary and player portrait
+	-Player interactions(message, befriend)
+	
+For developers:
+   
+    -Rerender every 5 minutes;
+    -Movable across the map
+    -

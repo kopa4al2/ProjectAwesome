@@ -1,0 +1,46 @@
+OOP:
+    Building:
+	byte tileWidth;
+	byte tileHeight;
+	byte upperLeftCoordinate;
+	String buildingName;
+	int maxLevel;
+	BuildingType buildingType;
+	
+	Cost[maxLevel] price;
+
+    BuildingType:
+        ResourceBuilding
+	MilitaryBuilding 	
+	
+    MilitaryBuilding extends Building{
+	int[maxLevel] maxUntisPerPatch;
+	List<Unit> allUnits;
+	List<Unit>[maxLevel] unitsAvailable; 
+
+    }
+	
+    ResourceBuilding extends Building{
+	Cost[maxLevel] ProductionPerHour;
+    }
+   
+    Unit{
+	int hp;
+	int attack;
+	int defense;
+	Cost price;
+    }
+	
+    Hero extends Unit (maybe){
+	//TODO: All kind of fancy stuff
+	int maxLevel;
+	int[maxLevel] totalExpNeeded;
+	int currentExp;			
+    }
+
+    Cost {
+	int metalCost;
+	int woodCost;
+	//TODO: Pick up fancy names for cost
+    } 
+
