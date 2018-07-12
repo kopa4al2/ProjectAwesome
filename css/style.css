@@ -1,11 +1,13 @@
-body{
+body {
     /*background-image: url("https://raw.githubusercontent.com/kopa4al2/ProjectAwesome/master/background.jpg");*/
+    /*background: black;*/
 }
 .wrapper{
     width:100%;
     height:1000px;
     background:linear-gradient(#3f5c62, #041C2F);
-    opacity:0.3;
+    opacity:1;
+    /*opacity:0.3;*/
 
 }
 .nav-bar{

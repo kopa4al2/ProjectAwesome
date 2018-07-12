@@ -1,0 +1,30 @@
+{ "backgroundcolor":"#55ffff",
+ "height":10,
+ "infinite":false,
+ "layers":[
+        {
+         "data":[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+         "height":10,
+         "name":"Tile Layer 1",
+         "opacity":1,
+         "type":"tilelayer",
+         "visible":true,
+         "width":10,
+         "x":0,
+         "y":0
+        }],
+ "nextobjectid":1,
+ "orientation":"isometric",
+ "renderorder":"right-down",
+ "tiledversion":"1.1.5",
+ "tileheight":45,
+ "tilesets":[
+        {
+         "firstgid":1,
+         "source":"grass.tsx"
+        }],
+ "tilewidth":45,
+ "type":"map",
+ "version":1,
+ "width":10
+}
