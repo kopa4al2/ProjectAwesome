@@ -11,9 +11,12 @@ body {
 
 }
 .nav-bar{
+
+    display:none;
+
     text-align:center;
     margin:auto;
-    display:flex;
+    /*display:flex;*/
 
 }
 .nav-item{
@@ -43,7 +46,7 @@ a{
 }
 .main-container{
     margin:30px 5px;
-    height:650px;
+    height:500px;
     border:1px solid black;
 }
 footer{
