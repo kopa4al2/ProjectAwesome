@@ -1,3 +1,12 @@
+canvas{
+    position:absolute;
+    top:0;
+    left:0;
+}
+#buildings-layer{
+    width:1000px;
+    height:630px;
+}
 body {
     /*background-image: url("https://raw.githubusercontent.com/kopa4al2/ProjectAwesome/master/background.jpg");*/
     /*background: black;*/
@@ -45,7 +54,8 @@ a{
 
 }
 .main-container{
-    margin:30px 5px;
+    /*margin:30px 5px;*/
+    padding-top:10px;
     height:500px;
     border:1px solid black;
 }

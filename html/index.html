@@ -5,9 +5,14 @@
     <title>Awesome</title>
     <link rel="stylesheet" href="../css/css-reset.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/hud-style.css">
 
-    <script type="text/javascript" src="../scripts/libs/crafty.js"></script>
+    <!--<script type="text/javascript" src="../scripts/libs/crafty.js"></script>-->
+    <!--<script type="text/javascript" src="https://github.com/craftyjs/Crafty/releases/download/0.7.1/crafty-min.js"></script>-->
+    <script src="../scripts/libs/crafty-min.js"></script>
     <script src="../scripts/libs/jquery.js"></script>
+    <script src="../scripts/map.js"></script>
+    <script src="../scripts/isometric.js"></script>
 
 
     <script src="../scripts/source.js"></script>
@@ -18,21 +23,45 @@
 
 </head>
 <body>
-    <div class="wrapper">
-        <nav class="nav-bar">
-            <li class="nav-item"><a href="#">Contact us</a></li>
-            <li class="nav-item"><a href="#">Report</a></li>
-            <li class="nav-item"><a href="#">Community</a></li>
-            <li class="nav-item"><a href="#">About us</a></li>
-        </nav>
-        <main class="main-container" id="game-container">
-        </main>
-        <footer>
-            <section class="ad"></section>
-            <section class="ad"></section>
-            <section class="ad"></section>
-        </footer>
-    </div>
+<div class="wrapper">
+    <nav class="nav-bar">
+        <li class="nav-item"><a href="#">Contact us</a></li>
+        <li class="nav-item"><a href="#">Report</a></li>
+        <li class="nav-item"><a href="#">Community</a></li>
+        <li class="nav-item"><a href="#">About us</a></li>
+    </nav>
+    <main class="main-container" id="game-container">
+        <canvas id="tile-layer"></canvas>
+        <canvas id="buildings-layer"></canvas>
+        <div id="HUD">
+            <section id="inner-map-hud">
+                <div class="section"><img id="town-link" src="../images/City.png" alt="HOME"></div>
+                <div class="section"><img id="map-link" src="../images/race-map.jpeg" alt="RACE MAP"></div>
+            </section>
+            <section id="town-map-hud">
+                <div id="building-menu"><a href="#">Build</a></div>
+                <div id="buildings-list">
+                    <div class="building-option"></div>
+                </div>
+                <div id="info">
+                    <div class="info-section">
+                        <img src="../images/resources/gold.png" alt="gold-img">
+                        <p id="gold-amount"></p>
+                    </div>
+                    <div class="info-section">
+                        <img src="../images/resources/wood.png" alt="wood-img">
+                        <p id="wood-amount"></p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <!--<footer>-->
+        <!--<section class="ad"></section>-->
+        <!--<section class="ad"></section>-->
+        <!--<section class="ad"></section>-->
+    <!--</footer>-->
+</div>
 
 </body>
 </html>

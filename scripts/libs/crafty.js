@@ -13999,9 +13999,9 @@ Crafty.extend({
             this._map.width = parseInt(mw, 10);
             this._map.height = parseInt(mh, 10) || parseInt(mw, 10);
             for (var i=0; i<mw; i++) {
-                this._tiles[i]=Array();
+                this._tiles[i]=[];
                 for (var j=0; j<mh; j++){
-                this._tiles[i][j]=Array();
+                this._tiles[i][j]=[];
                 }
             }
             this.x = parseInt(x,10) || 0;
@@ -14031,10 +14031,13 @@ Crafty.extend({
          * @see Crafty.diamondIso.size
          */
         place: function (obj, x, y, layer) {
+
             var pos = this.pos2px(x, y);
+            console.log(pos)
             //this calculation is weird because tile sprites are h*2
             //for tiles of size h in isometric
             var spriteHeight =obj.h/this._tile.height;
+
             obj.x = pos.x;
             obj.y = pos.y - (spriteHeight-2)*this._tile.height - this._tile.height*layer;
             obj.z = this.getZAtLoc(x,y,layer);
